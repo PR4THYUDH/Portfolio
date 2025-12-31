@@ -1,0 +1,99 @@
+.about-me{
+    margin-top: 10px;
+    font-weight: 600;
+    color: #b6b5b5;
+    max-width: 800px;        
+    margin: 0 auto;          
+    padding: 20px;           
+    text-align: center;      
+    line-height: 1.6;
+}
+/* TECH STACK */
+
+.skills-section{
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-grid{
+    display: grid;
+    gap: 22px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skill-card{
+    height: 160px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .35s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover{
+    transform: translateY(-6px);
+    border-color:#6e71ff;
+    box-shadow: 0 0 25px rgba(110,113,255,.35);
+}
+
+.skill-card i{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.skill-card p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.stack-title {
+    text-align: center;
+    width: 100%;
+}
+
+.soft-skills {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.soft-skills h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.soft-skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.soft-skills li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+

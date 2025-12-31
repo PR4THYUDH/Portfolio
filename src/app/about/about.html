@@ -1,0 +1,26 @@
+     <div class="about-me">
+        <br><br>
+        <h2>About Me</h2>
+        <p>I am a BCA graduate passionate about Full-Stack Development, with technical skills in Python, Django, Angular, JavaScript, TypeScript, Node.js and Express.js. I enjoy building web applications that solve real problems and focus on both functionality and user experience.<br>My academic project 'Eyemate' integrates Android and Python-Django backend to help visually impaired users identify objects through image processing and audio feedback. I have also worked on a Daily Expense Tracker mini project using Django for managing and monitoring expenses.<br>I have completed several cybersecurity and full-stack learning programs from platforms like Forage, Cisco, TryHackMe, UpGrad and Inmakes, which helped me improve my problem-solving approach and development workflow.<br>I am actively looking for opportunities as a Full-Stack Developer / Python Developer / Web Developer to apply my skills, contribute to real-world projects, and continue learning in a collaborative environment.</p>
+    </div>
+<section class="skills-section">
+    <h2 class="stack-title"> Tech Stack </h2>
+    <br>
+    <div class="skills-grid">
+        <div *ngFor="let skill of skills" class="skill-card">
+            <i [class]="skill.icon"></i>
+            <p>{{ skill.name }}</p>
+        </div>
+    </div>
+</section>
+<section class="soft-skills">
+  <h3>Soft Skills</h3>
+  <ul>
+    <li>Communication & Collaboration</li>
+    <li>Problem Solving & Analytical Thinking</li>
+    <li>Time Management & Task Prioritization</li>
+    <li>Leadership & Team Coordination</li>
+    <li>Creativity & Innovative Thinking</li>
+    <li>Adaptive & Quick Learning Attitude</li>
+  </ul>
+</section>

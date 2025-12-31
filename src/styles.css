@@ -1,0 +1,55 @@
+@import './styles/theme.css';
+
+:root {
+  --bg-1: #0b0b12;
+  --accent-1: #a78bfa;
+  --accent-2: #6366f1;
+  --accent-3: #818cf8;
+
+  --text-main: #ffffff;
+  --text-soft: #d9d9ff;
+  --text-muted: #9a9ac4;
+
+  --glass: rgba(255,255,255,0.06);
+  --card-border: rgba(167,139,250,0.25);
+  --glow: rgba(167,139,250,0.35);
+}
+
+
+/* Background aesthetic */
+body {
+  background: var(--bg-1);
+  color: var(--text-main);
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content:"";
+  position: fixed;
+  width: 650px;
+  height: 650px;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+body::before { background: var(--accent-1); top:-250px; left:-200px; opacity:.35; }
+body::after  { background: var(--accent-2); bottom:-250px; right:-200px; opacity:.32; }
+
+
+
+
+/* Smooth scroll for header navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure each section fits screen properly */
+section {
+  min-height: 100vh;        /* Each section covers full screen height */
+  padding-top: 80px;        /* Prevents header from covering content */
+  scroll-margin-top: 80px;  /* Makes anchor jump perfect below header */
+}
+

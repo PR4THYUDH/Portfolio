@@ -1,0 +1,148 @@
+.project-section {
+  padding: 80px 0;
+}
+
+.project-container {
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  width:80%;
+  margin:auto;
+}
+
+.project-card {
+  display:flex;
+  gap:25px;
+  padding:20px;
+  border-radius:14px;
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+}
+
+.image-wrapper{
+  width:30%;
+  min-width:230px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.image-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.3s;
+}
+
+.project-card:hover img{ transform:scale(1.05); }
+
+.details{ width:70%; display:flex; flex-direction:column; justify-content:space-between; }
+
+.title-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.title-row h3{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.desc{
+  opacity:.8;
+  margin:8px 0;
+}
+
+/* TECH TAGS */
+.tech-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.tech-tags span{
+  padding:3px 10px;
+  font-size:12px;
+  border-radius:50px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+}
+
+/* DEMO BUTTON */
+.demo-btn{
+  margin-top:12px;
+  padding:8px 14px;
+  font-size:14px;
+  background:var(--primary);
+  color:#d4d4d4;
+  border-radius:6px;
+  font-weight:600;
+  width:max-content;
+  transition:.3s;
+}
+
+.demo-btn:hover{ background:var(--secondary); }
+
+/* PROJECT SECTION HEADING */
+.project-header{
+    text-align:center;
+    margin-bottom:60px;
+    max-width:650px;
+    margin:auto;
+    color:white;
+}
+
+.project-header .badge{
+    padding:6px 14px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:25px;
+    font-size:14px;
+    display:inline-block;
+    margin-bottom:12px;
+}
+
+.project-title{
+    font-size:34px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.project-subtext{
+    font-size:14px;
+    opacity:.7;
+    margin-top:6px;
+}
+
+
+.back-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.glass-btn {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 28px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease;
+    box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+}
+
+/* Hover animation */
+.glass-btn:hover {
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 18px rgba(255,255,255,0.5);
+    color: #fff;
+}

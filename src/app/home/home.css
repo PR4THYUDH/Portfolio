@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Geist VF';
+;
+    src: url('/fonts/GeistVF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply font only for your intro section */
+.container-1 h1,
+.container-1 h3,
+.container-1 p {
+    font-family: 'Geist VF', sans-serif;
+}
+
+.container-1 h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    
+}
+
+.container-1 h3 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #d0d0d0; /* sub heading light grey */
+}
+
+.container-1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 15px auto;
+    color: #9a9a9a; /* paragraph softer grey */
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.container-1 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* Tech Stack */
+
+

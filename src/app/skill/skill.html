@@ -1,0 +1,40 @@
+<section class="skills-section" id="skills">
+  <div class="header">
+      <span class="badge">⚡ Skills & Technologies</span>
+      <h2>Technical Proficiency</h2>
+      <p>A comprehensive overview of my technical expertise across various development domains and tools.</p>
+  </div>
+
+  <div class="categories">
+      <div class="category" *ngFor="let cat of skills">
+
+          <div class="category-title">
+              <h3>{{ cat.title }}</h3>
+              <p>{{ cat.description }}</p>
+          </div>
+
+          <div class="skill-grid">
+              <div class="skill-card" *ngFor="let item of cat.skills">
+                  
+                  <div class="skill-row">
+                      <h4>{{ item.name }}</h4>
+
+                      <span *ngIf="item.hot" class="hot">🔥 Hot</span>
+                  </div>
+
+                  <div class="progress">
+                      <div class="fill" 
+                          [style.width.%]="getLevelPercentage(item.level)"
+                          [style.background]="cat.color"></div>
+                  </div>
+
+                  <div class="label">
+                      <span>Proficiency</span>
+                      <b>{{ item.level }}</b>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
